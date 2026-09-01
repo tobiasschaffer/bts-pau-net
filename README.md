@@ -1,4 +1,4 @@
-# PAU-Net brain-tumor segmentation and BraTS harmonization
+# PAU-Net Brain-Tumor Segmentation for NEHT Compartment
 
 The repository contains the training and inference pipeline used to identify
 four brain-tumor compartments in multi-modal MRI data:
@@ -123,7 +123,7 @@ All training scripts support `--epochs`, `--batch-size`, `--seed`,
 with `--help` for details. Every training run records the exact subject split in
 `split.csv` and the learning history in `history.csv`.
 
-## Important methodological details
+## Methodological details
 
 - Modalities are ordered as T1, T2, T1ce, and FLAIR.
 - Each modality is center-cropped to `(96, 192, 160)` and independently
