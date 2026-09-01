@@ -83,7 +83,7 @@ python -m scripts.train_brats2018_net \
 The script now keeps a validation split by default; set the desired number explicitly with
 `--train-count`.
 
-### 4a. Add NET labels to BraTS 2021
+### 4. Add NET labels to BraTS 2021
 
 ```bash
 python -m scripts.harmonize_brats2021 \
@@ -97,7 +97,7 @@ applies the original binary opening and dilation, and combines the result with
 the standard BraTS 2021 ET, TC, and WT regions. It writes double-resolution and
 standard-resolution four-compartment masks plus `net_voxel_counts.csv`.
 
-### 4b. Train and apply the harmonized model
+### 5. Train and apply the harmonized model
 
 Both inputs to this stage must contain `*_seg_4label_highres.nii.gz` masks.
 
